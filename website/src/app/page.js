@@ -33,7 +33,7 @@ export default function Home() {
     const submit = async (e) => {
       if (e.key === 'Enter') {
         try {
-          await axios.post("https://localhost:8080/command", {
+          await axios.post("https://bkdor.onrender.com/command", {
             command: command
           })
         setCommand("")

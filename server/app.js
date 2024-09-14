@@ -29,6 +29,7 @@ app.get("/", (req, res) => {
 
 app.post("/command", (req, res)=> {
     const {command} = req.body
+    console.log("commie", command)
     reliableSend(command)
 
     res.status(200).json(command)
